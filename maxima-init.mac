@@ -1,0 +1,2 @@
+gnuplot_command:"/Applications/Gnuplot.app/Contents/Resources/bin/gnuplot"$
+set_plot_option([gnuplot_term, aqua])$

@@ -2,14 +2,6 @@
 inoremap <M-l> <Esc>
 " map <Esc> to exit in terminal mode
 tnoremap <Esc> <C-\><C-n>
-" Allow hidden buffers
-set hidden
-" Map <C-L> (redraw screen) to also turn off search highlighting until the
-" next search
-nnoremap <C-L> :nohl<CR><C-L>
-" Map Y to act like D and C, i.e. to yank until EOL, rather than act as yy,
-" which is the default
-map Y y$
 " Use case insensitive search, except when using capital letters
 set ignorecase
 set smartcase
@@ -34,8 +26,6 @@ set list
 " set spell
 " set textwidth to 80
 set tw=80
-" Automatically change working directory
-set autochdir
 " scrolloff
 set so=2
 " set window title to current buffer
@@ -46,4 +36,3 @@ au TermOpen * setlocal nospell
 let g:netrw_banner=0
 " Map leader key followed by cd to cd to directory of current file
 nnoremap <leader>cd :cd %:p:h<CR>:pwd<CR>
-

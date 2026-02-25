@@ -3,3 +3,5 @@
 -- Add any additional keymaps here
 -- Remap "New Tab" to open current buffer instead of [No Name]
 vim.keymap.set("n", "<leader><tab><tab>", "<cmd>tab split<cr>", { desc = "New Tab (Current Buffer)" })
+-- Automatically expand to CLAUDE.md
+vim.cmd([[iabbrev clmd CLAUDE.md]])

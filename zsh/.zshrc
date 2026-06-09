@@ -12,3 +12,17 @@ case ":$PATH:" in
 esac
 # pnpm end
 
+
+# bun completions
+[ -s "/Users/shrikantkshirsagar/.bun/_bun" ] && source "/Users/shrikantkshirsagar/.bun/_bun"
+
+# bun
+export BUN_INSTALL="$HOME/.bun"
+export PATH="$BUN_INSTALL/bin:$PATH"
+# The following lines have been added by Docker Desktop to enable Docker CLI completions.
+fpath=(/Users/shrikantkshirsagar/.docker/completions $fpath)
+autoload -Uz compinit
+compinit
+# End of Docker CLI completions
+#
+source /opt/homebrew/opt/antidote/share/antidote/antidote.zsh

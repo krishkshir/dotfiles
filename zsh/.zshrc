@@ -26,3 +26,7 @@ compinit
 # End of Docker CLI completions
 #
 source /opt/homebrew/opt/antidote/share/antidote/antidote.zsh
+
+# Use different Claude accounts
+alias personal-claude='claude'
+alias biz-claude='CLAUDE_CONFIG_DIR=~/.ecofire-claude claude'
